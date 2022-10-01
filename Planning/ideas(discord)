@@ -1,0 +1,40 @@
+DoctorBuilder — Yesterday at 3:19 PM
+War Theatres:
+    Area: airspace(aircrafts), land(tanks, planes), sea(ships)
+    (we need a map)
+Transportation:
+    Food, Weapons (Weapon Factories)
+Entities
+    (soldiers, refugees, medics, global organisations, countries)
+Phase of War
+
+Changes of War:
+    Decorator?
+
+Design Patterns Implemented
+State: status of a citizen: unlisted, enlisted, deployed, fighting, stationed, dead
+Template Method
+Factory Method
+Prototype
+Iterator
+Observor
+
+
+We could have a game like battleships
+Or a program that combines many different games
+
+Amber-Leigh — Yesterday at 3:34 PM
+For changes of war we can implement a state pattern as "the behaviour an object exhibits is dependent on the state of the object" so it will do different things based on the state which is what we need since the country/group will make various changes with how they engage with the enemy(change state) Change state of object -> influences behaviour of object at run-time 
+They also mention "as time progresses" which is like the traffic light example we did before, but now with the project it will be much more complicated😂
+
+Amber-Leigh — Yesterday at 9:39 PM
+Some ideas:
+Command pattern
+Commander: exercises authority and direction over assigned and attached forces in the accomplishment of the mission.
+
+Mediator pattern
+Mediator
+Command Center: A facility from which a commander and his or her representatives direct operations and control forces. It is organized to gather, process, analyze, display, and disseminate planning and operational data and perform other related tasks.
+
+Component
+Military unit - (soldiers contained in team, group, division, etc.)
