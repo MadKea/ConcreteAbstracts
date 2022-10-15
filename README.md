@@ -1,6 +1,12 @@
 # ConcreteAbstracts
 COS 214 Project
 
+### Code
+
+ - Please put all header files in the `include` directory.
+ - All `.cpp` files go in the `src` directory.
+ - After adding a file to the project, make sure to add it to the `CMakeLists.txt` file.
+
 ## Building
 
 ### Option 1
