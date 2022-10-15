@@ -2,4 +2,4 @@ build/
 cmake-build-*
 .idea
 .vscode
-src/main.cpp
+main.cpp
