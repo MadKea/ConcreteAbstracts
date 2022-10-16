@@ -8,7 +8,7 @@ private:
     int groupSize;
 public:
     People(/* args */);
-    // ~People();
+    virtual ~People();
 };
 
 

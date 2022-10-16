@@ -8,3 +8,8 @@ void Recruits::handle()
 {
     //TODO - Implement Recruits::handle()
 }
+
+Recruits::~Recruits()
+{
+    
+}

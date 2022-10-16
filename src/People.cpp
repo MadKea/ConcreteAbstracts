@@ -4,3 +4,8 @@ People::People(/* args */)
 {
     
 }
+
+People::~People()
+{
+    
+}

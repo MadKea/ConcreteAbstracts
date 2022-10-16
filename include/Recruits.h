@@ -19,7 +19,7 @@ private:
 public:
     Recruits(/* args */);
     void handle();
-    // ~Recruits();
+    virtual ~Recruits();
 };
 
 
