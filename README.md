@@ -21,6 +21,6 @@ create an executable in the `build` directory. You can also run it with `make ru
  2. Change directory into  `build` and run `cmake ..`
  3. Now you can use `make` or `make run` inside the `build` directory like normal. 
  
- ## Running (To skip changing directories)
+ ## Running (To skip changing directories after Building)
  
  1. Try `./run.sh`. If you get a permission denied error, first run `chmod +x run.sh`
