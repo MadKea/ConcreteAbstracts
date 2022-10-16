@@ -16,6 +16,11 @@ COS 214 Project
 create an executable in the `build` directory. You can also run it with `make run`
 
 ### Option 2 (If option 1 doesn't work)
+
  1. Create a folder called `build` in the main directory.
  2. Change directory into  `build` and run `cmake ..`
  3. Now you can use `make` or `make run` inside the `build` directory like normal. 
+ 
+ ## Running (To skip changing directories)
+ 
+ 1. Try `./run.sh`. If you get a permission denied error, first run `chmod +x run.sh`
