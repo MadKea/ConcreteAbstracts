@@ -18,6 +18,7 @@ add_executable(testExec testSrc/testMain.cpp ${CPP_FILES})
 # To add a test, follow the following format.
 # add_test(<test_name> <test_executable> <program arguments>)
 add_test(testCountry testExec testCountry)
+add_test(testRecruits testExec testRecruits)
 
 target_include_directories(simulator PUBLIC include)
 target_include_directories(testExec PUBLIC include)
