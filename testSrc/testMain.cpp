@@ -11,6 +11,10 @@
 #include <iostream>
 #include <AllyRegistry.h>
 #include <BattleRegistry.h>
+#include <SuppliesTransport.h>
+#include <WeaponTransport.h>
+#include <AttackVessel.h>
+#include <TransportContext.h>
 
 int testCountry()
 {
@@ -23,7 +27,10 @@ int testCountry()
     delete country;
     return result;
 }
-int testRecruit(Recruits *recruit,RecuiterContext *myContext){//helper function for testRecruits
+
+//helper function for testRecruits
+int testRecruit(Recruits *recruit,RecuiterContext *myContext)
+{
     int result = 0;
     myContext->setState(recruit);
     if(myContext->getState() != recruit)
@@ -153,19 +160,49 @@ int testRegistry()
     return testResult;
 }
 
+int testTransport()
+{
+    int result = 0;
+
+    auto* recruits = new Recruits;
+
+    auto* suppliesTransport = new SuppliesTransport;
+    auto* weaponTransport = new WeaponTransport;
+    auto* attackVessel = new AttackVessel;
+
+    auto* context = new TransportContext(suppliesTransport);
+    context->purchase(recruits);
+
+    context->setStrategy(weaponTransport);
+    context->purchase(recruits);
+
+    context->setStrategy(attackVessel);
+    context->purchase(recruits);
+
+    delete context;
+    delete suppliesTransport;
+    delete weaponTransport;
+    delete attackVessel;
+
+    return result;
+}
+
 // Write your testing functions like this
 //int myTest()
 //{
 //    // Testing code goes here
 //}
 
-int main(int argc, const char** argv) {
+int main(int argc, const char** argv)
+{
     if (std::strcmp(argv[1], "testCountry") == 0)
         return testCountry();
     if (std::strcmp(argv[1], "testRecruits") == 0)
         return testRecruits();
     if (std::strcmp(argv[1], "testRegistry") == 0)
         return testRegistry();
+    if (std::strcmp(argv[1], "testTransport") == 0)
+        return testTransport();
 
 //    To add a new test
 //    if (std::strcmp(argv[1], "myTest") == 0)
