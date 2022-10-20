@@ -1,12 +1,13 @@
-#ifndef ATTACKVESSEL_H
-#define ATTACKVESSEL_H
+#ifndef CONCRETEABSTRACTS_ATTACKVESSEL_H
+#define CONCRETEABSTRACTS_ATTACKVESSEL_H
 
-#include "Transport.h"
+#include <Transport.h>
 
-class AttackVessel : public Transport 
+class AttackVessel : public Transport
 {
-    public:
-    private:
+public:
+    AttackVessel() = default;
+    void purchase(Recruits* recruits) override;
 };
 
-#endif
+#endif //CONCRETEABSTRACTS_ATTACKVESSEL_H

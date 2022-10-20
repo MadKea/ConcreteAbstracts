@@ -1,10 +1,19 @@
-#ifndef TRANSPORTCONTEXT_H
-#define TRANSPORTCONTEXT_H
+#ifndef CONCRETEABSTRACTS_TRANSPORTCONTEXT_H
+#define CONCRETEABSTRACTS_TRANSPORTCONTEXT_H
 
-class TransportContext 
+#pragma once
+
+#include <Transport.h>
+#include <Recruits.h>
+
+class TransportContext
 {
-    public: 
-    private:
+private:
+    Transport* strategy;
+public:
+    explicit TransportContext(Transport* defaultStrategy);
+    void purchase(Recruits* recruits);
+    void setStrategy(Transport* newStrategy);
 };
 
-#endif
+#endif //CONCRETEABSTRACTS_TRANSPORTCONTEXT_H

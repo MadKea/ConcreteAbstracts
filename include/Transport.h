@@ -1,10 +1,12 @@
-#ifndef TRANSPORT_H
-#define TRANSPORT_H
+#ifndef CONCRETEABSTRACTS_TRANSPORT_H
+#define CONCRETEABSTRACTS_TRANSPORT_H
 
-class Transport 
+#include <Recruits.h>
+
+class Transport
 {
-    public: 
-    private:
+public:
+    virtual void purchase(Recruits* recruits) = 0;
 };
 
-#endif
+#endif //CONCRETEABSTRACTS_TRANSPORT_H
