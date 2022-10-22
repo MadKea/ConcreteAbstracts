@@ -34,7 +34,29 @@ add_executable(simulator
                 include/AttackVessel.h
                 src/AttackVessel.cpp
                 include/SuppliesTransport.h
-                src/SuppliesTransport.cpp)
+                src/SuppliesTransport.cpp
+                src/Air.cpp
+                include/Air.h
+                src/Land.cpp
+                include/Land.h
+                src/Sea.cpp
+                include/Sea.h
+                src/Space.cpp
+                include/Space.h
+                src/Mines.cpp
+                include/Mines.h
+                src/SpaceMagnets.cpp
+                include/SpaceMagnets.h
+                src/Trenches.cpp
+                include/Trenches.h
+                src/Barricades.cpp
+                include/Barricades.h
+                src/Traps.cpp
+                include/Traps.h
+                src/BattleGround.cpp
+                include/BattleGround.h
+                src/WarTheatre.cpp
+                include/WarTheatre.h)
 
 file(GLOB CPP_FILES src/*.cpp)
 list(FILTER CPP_FILES EXCLUDE REGEX src/main.cpp)
@@ -46,6 +68,7 @@ add_test(testCountry testExec testCountry)
 add_test(testRecruits testExec testRecruits)
 add_test(testRegistry testExec testRegistry)
 add_test(testTransport testExec testTransport)
+add_test(testWarTheatre testExec warTheatreTest)
 
 target_include_directories(simulator PUBLIC include)
 target_include_directories(testExec PUBLIC include)
