@@ -68,7 +68,7 @@ add_test(testCountry testExec testCountry)
 add_test(testRecruits testExec testRecruits)
 add_test(testRegistry testExec testRegistry)
 add_test(testTransport testExec testTransport)
-add_test(testWarTheatre testExec warTheatreTest)
+add_test(testWarTheatre testExec testWarTheatre)
 
 target_include_directories(simulator PUBLIC include)
 target_include_directories(testExec PUBLIC include)
